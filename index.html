@@ -304,9 +304,8 @@
       border-radius: 28px;
       overflow: hidden;
       border: 1px solid var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.18)),
-                  radial-gradient(circle at top, rgba(185,154,87,0.25), transparent 45%),
-                  linear-gradient(135deg, #1c1d22, #0f1013);
+      background-size: cover;
+      background-position: center;
       display: flex;
       align-items: end;
       padding: 24px;
@@ -316,7 +315,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, transparent 30%, rgba(0,0,0,0.75) 100%);
+      background: linear-gradient(180deg, rgba(0,0,0,0.05) 20%, rgba(0,0,0,0.82) 100%);
     }
 
     .gallery-copy {
@@ -554,25 +553,46 @@
           </p>
         </div>
         <div class="gallery-grid">
-          <article class="gallery-item">
+          <article class="gallery-item" style="background-image: url('gallery-1.jpg');">
             <div class="gallery-copy">
-              <span>Portraits</span>
-              <h3>Confident, timeless expressions</h3>
-              <p>Portrait sessions shaped with soft direction, flattering tones, and a clean editorial feel.</p>
+              <span>Portrait</span>
+              <h3>Moody light, bold expression</h3>
+              <p>Character-driven portraits with cinematic light and strong atmosphere.</p>
             </div>
           </article>
-          <article class="gallery-item">
+          <article class="gallery-item" style="background-image: url('gallery-2.jpg');">
             <div class="gallery-copy">
-              <span>Events</span>
-              <h3>Moments with elegance and depth</h3>
-              <p>Natural storytelling that preserves emotion while keeping every frame sharp and intentional.</p>
+              <span>Corporate</span>
+              <h3>Professional presence that inspires trust</h3>
+              <p>Clean executive portraits crafted to look polished, credible, and premium.</p>
             </div>
           </article>
-          <article class="gallery-item">
+          <article class="gallery-item" style="background-image: url('gallery-3.jpg');">
             <div class="gallery-copy">
-              <span>Branding</span>
-              <h3>Visual identity that feels premium</h3>
-              <p>Modern brand imagery created to elevate websites, campaigns, and social presence.</p>
+              <span>Family</span>
+              <h3>Real moments with vibrant energy</h3>
+              <p>Natural family photography with vivid color, warmth, and memorable composition.</p>
+            </div>
+          </article>
+          <article class="gallery-item" style="background-image: url('gallery-4.jpg');">
+            <div class="gallery-copy">
+              <span>Architecture</span>
+              <h3>Drama in every angle</h3>
+              <p>Architectural photography that turns scale, mood, and detail into visual impact.</p>
+            </div>
+          </article>
+          <article class="gallery-item" style="background-image: url('gallery-5.jpg');">
+            <div class="gallery-copy">
+              <span>Automotive</span>
+              <h3>Detail, reflection, attitude</h3>
+              <p>High-contrast automotive imagery that brings out texture, form, and presence.</p>
+            </div>
+          </article>
+          <article class="gallery-item" style="background-image: url('gallery-6.jpg');">
+            <div class="gallery-copy">
+              <span>Automotive</span>
+              <h3>Color and power in one frame</h3>
+              <p>Modern vehicle shots with dynamic perspective and striking visual punch.</p>
             </div>
           </article>
         </div>
