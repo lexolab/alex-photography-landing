@@ -292,6 +292,59 @@
       line-height: 1.75;
     }
 
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .gallery-item {
+      position: relative;
+      min-height: 360px;
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.18)),
+                  radial-gradient(circle at top, rgba(185,154,87,0.25), transparent 45%),
+                  linear-gradient(135deg, #1c1d22, #0f1013);
+      display: flex;
+      align-items: end;
+      padding: 24px;
+    }
+
+    .gallery-item::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 30%, rgba(0,0,0,0.75) 100%);
+    }
+
+    .gallery-copy {
+      position: relative;
+      z-index: 1;
+    }
+
+    .gallery-copy span {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: var(--gold);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+    }
+
+    .gallery-copy h3 {
+      margin: 0 0 10px;
+      font-size: 1.35rem;
+    }
+
+    .gallery-copy p {
+      margin: 0;
+      color: #d3cdc3;
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
     .quality {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -378,7 +431,8 @@
     @media (max-width: 980px) {
       .hero-grid,
       .quality,
-      .contact {
+      .contact,
+      .gallery-grid {
         grid-template-columns: 1fr;
       }
 
@@ -408,6 +462,7 @@
       </a>
       <nav class="nav-links">
         <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
         <a href="#quality">Quality</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -482,6 +537,43 @@
             <span class="tag">Branding</span>
             <h3>Visual assets for modern businesses</h3>
             <p>Professional imagery tailored for websites, marketing, social media, and brand identity — built to strengthen presence and trust.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Small Gallery</div>
+            <h2>A quick look at the visual style.</h2>
+          </div>
+          <p>
+            A refined, modern aesthetic with strong composition, clean light, and polished finishing — designed to make every image feel premium.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <article class="gallery-item">
+            <div class="gallery-copy">
+              <span>Portraits</span>
+              <h3>Confident, timeless expressions</h3>
+              <p>Portrait sessions shaped with soft direction, flattering tones, and a clean editorial feel.</p>
+            </div>
+          </article>
+          <article class="gallery-item">
+            <div class="gallery-copy">
+              <span>Events</span>
+              <h3>Moments with elegance and depth</h3>
+              <p>Natural storytelling that preserves emotion while keeping every frame sharp and intentional.</p>
+            </div>
+          </article>
+          <article class="gallery-item">
+            <div class="gallery-copy">
+              <span>Branding</span>
+              <h3>Visual identity that feels premium</h3>
+              <p>Modern brand imagery created to elevate websites, campaigns, and social presence.</p>
+            </div>
           </article>
         </div>
       </div>
