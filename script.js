@@ -43,7 +43,7 @@ document.getElementById('showAll').addEventListener('click', function(){
 document.getElementById('contactForm').addEventListener('submit', e => {
   e.preventDefault();
   const status = document.getElementById('formStatus');
-  status.textContent = 'Formulario listo. Conecta tu servicio de correo para recibir los mensajes.';
+  status.textContent = 'Form ready. Connect your email service to receive messages.';
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
